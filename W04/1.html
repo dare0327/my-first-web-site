@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>HTML이란 무엇인가</title>
+<link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body style="background-color: black; color: white;">
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <div>
+    <ol>
+        <li><a href="1.html" class="saw" id="active">HTML</a></li>
+        <li><a href="2.html" class="saw">CSS</a></li>
+        <li><a href="3.html" class="saw">JavaScript</a></li>
+        <li><a href="4.html" class="saw">React</a></li>
+    <!--
+    <li><a href="1.html"><font color="red">HTML</font></a></li>
+    <li><a href="2.html"><font color="green">CSS</font></a></li>
+    <li><a href="3.html"><font color="blue">JavaScript</font></a></li>
+    <li><a href="4.html"><font color="gray">React</font></a></li>
+    -->
+</ol>
+
+<input id="night_day" type="button" value="night" onclick="
+        let target = document.querySelector('body');
+        if(this.value=='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white'
+           document.querySelector('#night_day').value='day'
+            var i = 0;
+            while (i < document.querySelectorAll('a').length){document.querySelectorAll('a')[i].style.color = 'powderblue';i = i + 1;}
+          }
+           else{
+            target.style.backgroundColor='white';
+            target.style.color='black'
+           document.querySelector('#night_day').value='night'
+           var i = 0;
+           while (i < document.querySelectorAll('a').length){document.querySelectorAll('a')[i].style.color = 'blue';i = i + 1;}
+
+
+           }
+          ">
+</div>
+<div>
+<h2>HTML</h2>
+<img src="a.jpg" alt="html image" width="300" height="200">
+<p>The HyperText Markup Language or <span>HTML</span> is <strong>the standard <u>markup</u> language</strong> for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+
+<p style="margin-top:40px"> style="margin-top:40px">Web browsers receive <span>HTML</span> documents from a web server or from local storage and render the documents into multimedia web pages. <span>HTML</span> describes the structure of a web page semantically and originally included cues for its appearance.</p>
+</div>
+</div>
+
+</body>
+</html>
